@@ -1,0 +1,15 @@
+,RFE_support
+Aspect_30m,False
+Curvature_30m,True
+Dis2Roads_30m,False
+Dis2stream_30m,False
+Elevation_30m,True
+Geomorphology_30m,True
+Lithology_30m,True
+LULC_30m,True
+Rainfall_30m,False
+Slope_30m,False
+Soil_30m,False
+SPI_30m,False
+Stream_Density_30m,False
+TWI_30m,False

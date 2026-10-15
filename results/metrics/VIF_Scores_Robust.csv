@@ -1,0 +1,15 @@
+Feature,VIF
+Slope_30m,inf
+TWI_30m,inf
+Elevation_30m,1.6721922
+Stream_Density_30m,1.6228852
+Dis2stream_30m,1.572464
+Lithology_30m,1.4440502
+Geomorphology_30m,1.3890504
+SPI_30m,1.3103966
+Rainfall_30m,1.1657784
+LULC_30m,1.0657271
+Dis2Roads_30m,1.06019
+Soil_30m,1.040732
+Aspect_30m,1.0321293
+Curvature_30m,1.0009437

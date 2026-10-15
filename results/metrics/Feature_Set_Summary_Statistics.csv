@@ -1,0 +1,5 @@
+,Accuracy,Accuracy,AUC-ROC,AUC-ROC,F1-Score,F1-Score,Precision,Precision,Recall,Recall,Kappa,Kappa
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+Feature_Set,,,,,,,,,,,,
+CSI,0.7897,0.0397,0.8676,0.0414,0.7747,0.0492,0.8301,0.0315,0.7281,0.0697,0.5793,0.0795
+LASSO,0.8784,0.0686,0.9376,0.0507,0.876,0.0701,0.8928,0.0705,0.8599,0.0698,0.7567,0.1372

@@ -1,0 +1,22 @@
+{
+  "district_cells": 1632234,
+  "district_km2": 1469.0106,
+  "slope_was_twi": true,
+  "slope_deg": {
+    "mean": 1.8164714574813843,
+    "median": 1.6876047849655151,
+    "p99": 6.017284393310547,
+    "share_zero": 0.047956971855751075
+  },
+  "filled_cells": {
+    "Geomorphology": 0,
+    "LULC": 0,
+    "Lithology": 0,
+    "Soil": 17803
+  },
+  "label": {
+    "flood_cells": 915986,
+    "nonflood_cells": 716248,
+    "flood_km2": 824.3874
+  }
+}

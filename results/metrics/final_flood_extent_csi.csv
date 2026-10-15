@@ -1,0 +1,11 @@
+feature_set,model,chosen_threshold,map_csi_points,classification_tif
+CSI,RF,0.43,0.8673756646856428,Khagaria_FSM/Predictions/CSI_RF/CSI_RF_Classification.tif
+CSI,XGB,0.45,0.7818181818181819,Khagaria_FSM/Predictions/CSI_XGB/CSI_XGB_Classification.tif
+LASSO,RF,0.47000000000000003,0.9004097069019855,Khagaria_FSM/Predictions/LASSO_RF/LASSO_RF_Classification.tif
+LASSO,XGB,0.49,0.8644278606965174,Khagaria_FSM/Predictions/LASSO_XGB/LASSO_XGB_Classification.tif
+MI,RF,0.42,0.8995006242197253,Khagaria_FSM/Predictions/MI_RF/MI_RF_Classification.tif
+MI,XGB,0.51,0.8644333124608641,Khagaria_FSM/Predictions/MI_XGB/MI_XGB_Classification.tif
+PERM,RF,0.48,0.8986422481844016,Khagaria_FSM/Predictions/PERM_RF/PERM_RF_Classification.tif
+PERM,XGB,0.49,0.8619832141746969,Khagaria_FSM/Predictions/PERM_XGB/PERM_XGB_Classification.tif
+VIF,RF,0.47000000000000003,0.9004097069019855,Khagaria_FSM/Predictions/VIF_RF/VIF_RF_Classification.tif
+VIF,XGB,0.49,0.8644278606965174,Khagaria_FSM/Predictions/VIF_XGB/VIF_XGB_Classification.tif
