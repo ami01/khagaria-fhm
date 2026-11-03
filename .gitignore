@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+catboost_info/
+*.aux.xml
+*.sbn
+*.sbx
+*.ovr
+.Rhistory
+.idea/

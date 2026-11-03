@@ -1,0 +1,148 @@
+{
+  "seed": 42,
+  "features": [
+    "Aspect",
+    "Curvature",
+    "Dis2Roads",
+    "Dis2stream",
+    "Elevation",
+    "Geomorphology",
+    "Lithology",
+    "LULC",
+    "Rainfall",
+    "Slope",
+    "Soil",
+    "SPI",
+    "Stream_Density",
+    "TWI"
+  ],
+  "categorical_coded": [
+    "Geomorphology",
+    "Lithology",
+    "LULC",
+    "Soil"
+  ],
+  "dl_features": [
+    "Aspect",
+    "Curvature",
+    "Dis2Roads",
+    "Dis2stream",
+    "Elevation",
+    "Geomorphology",
+    "Lithology",
+    "LULC",
+    "Rainfall",
+    "Slope",
+    "Soil",
+    "SPI",
+    "Stream_Density",
+    "TWI"
+  ],
+  "vif_limit": 10.0,
+  "split": {
+    "train": 1142563,
+    "val": 163224,
+    "test": 326447
+  },
+  "xgboost": {
+    "objective": "binary:logistic",
+    "eval_metric": "auc",
+    "tree_method": "hist",
+    "device": "cpu",
+    "nthread": 64,
+    "max_depth": 8,
+    "learning_rate": 0.1,
+    "subsample": 0.8,
+    "seed": 42,
+    "num_boost_round_max": 1000,
+    "early_stopping_rounds": 20,
+    "best_iteration": 1000
+  },
+  "random_forest": {
+    "library": "scikit-learn",
+    "n_estimators": 150,
+    "max_depth": 16
+  },
+  "catboost": {
+    "iterations": 800,
+    "learning_rate": 0.1,
+    "depth": 8,
+    "task_type": "CPU"
+  },
+  "ann": {
+    "layers": [
+      64,
+      32,
+      1
+    ],
+    "dropout": 0.3,
+    "batchnorm": true
+  },
+  "dnn": {
+    "layers": [
+      128,
+      64,
+      32,
+      1
+    ],
+    "dropout": [
+      0.4,
+      0.3
+    ],
+    "batchnorm": true
+  },
+  "nn_training": {
+    "optimizer": "Adam",
+    "lr": 0.001,
+    "epochs": 15,
+    "batch_size": 4096,
+    "loss": "BCEWithLogits"
+  },
+  "thresholds_from": "validation split",
+  "thresholds": {
+    "XGBoost": {
+      "MaxCSI": 0.4929139018058777,
+      "Youden": 0.5510944128036499
+    },
+    "CatBoost": {
+      "MaxCSI": 0.493992705012633,
+      "Youden": 0.5602340807034348
+    },
+    "RandomForest": {
+      "MaxCSI": 0.48737744895566226,
+      "Youden": 0.5269287264226057
+    },
+    "DNN": {
+      "MaxCSI": 0.4454672336578369,
+      "Youden": 0.5532738566398621
+    },
+    "ANN": {
+      "MaxCSI": 0.4289848506450653,
+      "Youden": 0.5442123413085938
+    }
+  },
+  "natural_breaks_from": "XGBoost probability map",
+  "natural_breaks": [
+    0.11800000071525574,
+    0.3540000021457672,
+    0.6389999985694885,
+    0.8840000033378601
+  ],
+  "shap_sample": 5000,
+  "dl_feature_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13
+  ]
+}
